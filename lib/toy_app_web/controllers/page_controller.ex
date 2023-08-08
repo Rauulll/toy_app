@@ -12,6 +12,6 @@ defmodule ToyAppWeb.PageController do
   end
 
   def hello(conn, _params) do
-    html(conn, "hello, world!")
+    html(conn, "It's working baby")
   end
 end
