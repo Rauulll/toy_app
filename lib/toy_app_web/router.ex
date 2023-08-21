@@ -17,7 +17,8 @@ defmodule ToyAppWeb.Router do
   scope "/", ToyAppWeb do
     pipe_through :browser
 
-    get "/", PageController, :hello
+    get "/", PageController, :home
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.
