@@ -1,4 +1,5 @@
 defmodule ToyAppWeb.Router do
+
   use ToyAppWeb, :router
 
   pipeline :browser do
@@ -19,6 +20,7 @@ defmodule ToyAppWeb.Router do
 
     get "/", PageController, :home
     resources "/users", UserController
+    resources "/microposts", MicropostController
   end
 
   # Other scopes may use custom stacks.
