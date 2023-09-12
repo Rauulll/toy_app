@@ -18,6 +18,7 @@ defmodule ToyAppWeb.Router do
   scope "/", ToyAppWeb do
     pipe_through :browser
 
+    #this is takes everything to controllers page
     get "/", PageController, :home
     resources "/users", UserController
     resources "/microposts", MicropostController
